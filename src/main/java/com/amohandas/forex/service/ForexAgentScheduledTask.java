@@ -50,7 +50,7 @@ public class ForexAgentScheduledTask {
         this.currencyRateUrl = getCurrencyRateUrl(forexServiceUrl);
     }
 
-    @Scheduled(fixedRate = 30000)  // every 30 seconds
+    @Scheduled(fixedRate = 60000)  // every 30 seconds
     public void retrieveCurrencyRates() {
         log.info("testing..........." + currencyRateUrl);
         if (!scheduledJobEnabled) {
