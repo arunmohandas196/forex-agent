@@ -1,7 +1,7 @@
 # Forex-Agent project
 
 This is the agent that talk with forex-service, and can be scheduled to run for a predefined criteria of configured currencies and exchange date.
-ForexAgent uses Spring scheduler to periodically call a GRS-Service for retrieving forex details configured currencies and exchange date in application.yml.
+ForexAgent uses Spring scheduler to periodically call a forex-service for retrieving forex details configured currencies and exchange date in application.yml.
 Currently task is scheduled to run periodically in fixed interval of 60 seconds.
 Make change for forex details in application.yml file
 
