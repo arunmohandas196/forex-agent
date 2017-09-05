@@ -1,0 +1,18 @@
+spring:
+  profiles.active: default
+
+---
+spring:
+  profiles: default
+  jmx.enabled: false
+
+forex.agent:
+  scheduledJob:
+    enabled: true
+  service.url: http://localhost:8090/forex/v1
+  exchangeDate: 2017-09-04  # Date in yyyy-MM-dd format or latest
+  sourceCurrency: EUR
+  targetCurrencies: USD #Currencies in comma separated format
+
+logging:
+  file: boot_forex_agent.log
